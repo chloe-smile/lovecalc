@@ -22,18 +22,15 @@ def calc():
     val1 = []
     for i in val:
         val1.append(val[0] + val[-1])
-        print(val)
         val.pop(0)
         val.pop() #removes first and last values
     val2 = val1 + val
     val3 = []
     for i in val2:
         val3.append(val2[0] + val2[-1])
-        print(val2)
         val2.pop(0)
         val2.pop() #removes first and last values
 
-    print(char_count)
     a = val3[0]
     b = val3[-1]
     print(F"Your love is {a}{b}%")
