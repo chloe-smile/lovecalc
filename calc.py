@@ -12,11 +12,9 @@ def calc():
     nameFirst = input("Enter first name: ")
     nameSecond = input("Enter second name: ")
     nameSum = nameFirst + nameSecond #returns 'nameFirstnameSecond' String
-    val1 = []
-    char_count = {}
     
-    for i in nameSum:
-        char_count[i] = nameSum.count(i) #assigns all char to an empty dict
+    val1 = []
+    char_count = {i: nameSum.count(i) for i in nameSum}
     val = list(char_count.values()) #assigns the dict to a list
 
     for i in val:
@@ -29,6 +27,6 @@ def calc():
     
     a = val3[0]
     b = val3[-1]
-    print(F"Your love is {a}{b}%")
+    print(f"Your love is {a}{b}%")
 calc()
 
