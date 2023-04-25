@@ -14,9 +14,8 @@ def calc():
     nameSum = nameFirst + nameSecond #returns 'nameFirstnameSecond' String
     char_count = {}
     for i in nameSum:
-        if i not in char_count:
-            char_count[i] = nameSum.count(i) #assigns all char to an empty dict
-            val = list(char_count.values()) #assigns the dict to a list
+        char_count[i] = nameSum.count(i) #assigns all char to an empty dict
+        val = list(char_count.values()) #assigns the dict to a list
     val1 = []
     for i in val:
         val1.append(val[0] + val[-1])
