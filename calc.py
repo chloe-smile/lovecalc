@@ -21,15 +21,13 @@ def calc():
     val = list(char_count.values()) #assigns the dict to a list
 
     for i in val:
-        val1.append(val[0] + val[-1])
-        val.pop(0)
-        val.pop() #removes first and last values
+        val1.append(val.pop(0) + val.pop(-1))
+    
     val2 = val1 + val
     val3 = []
+    
     for i in val2:
-        val3.append(val2[0] + val2[-1])
-        val2.pop(0)
-        val2.pop() #removes first and last values
+        val3.append(val2.pop(0) + val2.pop(-1))
 
     a = val3[0]
     b = val3[-1]
