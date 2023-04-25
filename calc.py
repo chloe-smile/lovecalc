@@ -17,18 +17,16 @@ def calc():
     
     for i in nameSum:
         char_count[i] = nameSum.count(i) #assigns all char to an empty dict
-    
     val = list(char_count.values()) #assigns the dict to a list
 
     for i in val:
         val1.append(val.pop(0) + val.pop(-1))
-    
     val2 = val1 + val
     val3 = []
     
     for i in val2:
         val3.append(val2.pop(0) + val2.pop(-1))
-
+    
     a = val3[0]
     b = val3[-1]
     print(F"Your love is {a}{b}%")
