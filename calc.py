@@ -12,11 +12,14 @@ def calc():
     nameFirst = input("Enter first name: ")
     nameSecond = input("Enter second name: ")
     nameSum = nameFirst + nameSecond #returns 'nameFirstnameSecond' String
+    val1 = []
     char_count = {}
+    
     for i in nameSum:
         char_count[i] = nameSum.count(i) #assigns all char to an empty dict
-        val = list(char_count.values()) #assigns the dict to a list
-    val1 = []
+    
+    val = list(char_count.values()) #assigns the dict to a list
+
     for i in val:
         val1.append(val[0] + val[-1])
         val.pop(0)
